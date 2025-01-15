@@ -19,7 +19,7 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 ## Scope
 +	1 monitoring node
 +	Real-time monitoring (Back up historical data in future)
-+	No electrical load, only solar panels with battery
++	No electrical load, only solar panels with battery and monitoring node
 +	Monitor dirtiness on each panel, temperature under panel, light intensity, rain, voltage and current flow from the panel, and energy generated from the panel
 
 ## List of features
