@@ -75,7 +75,7 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 +	To learn basic ideas of how to create IoT communication system
 +	To learn basic ideas of how to create a mobile app
 
-## Timelines
+## Timeline
 ![image](https://github.com/user-attachments/assets/41c7870b-2805-4b9a-b31a-86497f003847)
 
 ### **Week 1**
