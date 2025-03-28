@@ -85,16 +85,16 @@ Dirt monitoring system is designed to support solar panels in households. The sy
   + ***Mobile App and Cloud***: We surveyed various cloud and mobile applications available on the internet, such as Google Sheets, Thunkable, etc. In conclusion, we found many attractive software options, but some require a cost for certain processes. Therefore, we selected Netpie as our main software due to its user-friendly dashboard and its accompanying mobile app, which shares the same name and can be downloaded for free on mobile devices.
 ### **Week 2**
   + ***Dirt Detection***: Implemented an advanced copper tape design to improve capacitance variation in the experiment, aiming to enhance sensitivity in dirt detection. The new design successfully increased the capacitance change from 0.1 pF to 0.5-0.6 pF, indicating an improvement in detection capability. However, despite this increase, the change remains relatively small and still poses challenges for accurate detection. Factors such as the arrangement, width, and spacing of the copper tape could further influence capacitance behavior. The next step is to refine the design by optimizing these parameters to achieve a greater capacitance increase, making the changes more distinguishable and improving overall detection performance.
-  + ***Other Detection***:
+  + ***Other Detection***: All sensors have already been coded and examined. Those sensors worked properly according to the detection we designed. This task is waiting for integration with other parts of the outdoor controller.
   + ***Mobile App and Cloud***: Created a project in Netpie and established an initial connection between the sensor and the system. Simulated sensor values were successfully displayed on the dashboard, confirming that the setup is functioning as expected. The next step is to refine the integration and conduct testing with real sensor data to improve accuracy and reliability.
 ### **Week 3**
-  + ***Dirt Detection***:
-  + ***Other Detection***:
-  + ***Cleaning Action***:
+  + ***Dirt Detection***: Advance the design of the dirt sensor. We decrease the width of the gap between two copper strips to 1 millimeter and increase more area of the sensor plain. After experimenting with this approach, the capacitance of this sensor increases obviously. The capacitance change after pouring talcum on this sensor rises to 3.5 pF with the offset of 37.3 pF. We can conclude that decreasing the width of the copper strips gap and expanding more sensor plain area can raise the capacitance of the sensor. Now we finish designing the dirt sensor. The next step of this task is to find the best solution for converting the change in capacitance of this sensor to a suitable form of data read by the microcontroller ESP32.
+  + ***Other Detection***: This task is waiting for integration with other parts of the outdoor controller.
+  + ***Cleaning Action***: Complete cleaning action design. We use a 5-Volt DC pump for supplying water through a rubber tube to clean a solar panel. Water is kept and supplied from a small tank that the pump is held inside. We have already got the pump and examined this design. One problem occurs: The pump works with a low flow rate of water. It causes the panel may not be completely clean for a whole panel. Separating the water way more may help to spread water through more area on the panel, even if the water flow rate may be reduced.
   + ***Mobile App and Cloud***:
 ### **Week 4**
-  + ***Dirt Detection***:
-  + ***Other Detection***:
+  + ***Dirt Detection***: Detect the change in capacitance of the dirt sensor via the capacitive sensing inside ESP32. Since ESP32 has a feature to detect the capacitive sense and collect as a number of counts, the capacitance change of the sensor should also be detected by this feature. We tried this idea and then got that this feature in ESP32 can detect this change of the sensor. The sensitivity and resolution of the feature are enough to read the change. The value of counts is varied between (Earthquake, waiting for update)
+  + ***Other Detection***: This task is waiting for integration with other parts of the outdoor controller.
   + ***Cleaning Action***:
   + ***Mobile App and Cloud***:
 ### **Week 5**
