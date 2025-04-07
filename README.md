@@ -99,15 +99,12 @@ Dirt monitoring system is designed to support solar panels in households. The sy
   + ***Mobile App and Cloud***: Finish simple C code for implementation of interconnectivity. ESP32 can now send and receive data with a NETPIE device. The communication is perfectly smooth and has no problems right now. But this program does not include any functions used in the outdoor controller at the present, only simple data is used for this experiment to examine whether they can communicate with each other or not. The next step is to integrate this program with other functions in the outdoor controller, starting with the sensors on the outdoor controller.
 ### **Week 5**
   + ***Dirt Detection***:
-  + ***Other Detection***:
-  + ***Cleaning Action***:
-  + ***Energy Management***: 
-  + ***Mobile App and Cloud***:
+  + ***Outdoor Controller***: Combine the codes for other detection, cleaning action, and wireless communication (WiFi) using MQTT with NETPIE. We have already finished coding the combination of those functions, and it has been tested. This system then works correctly EXCEPT cleaning action. The DC pump does not get enough electric current to drive itself because it is directly connected to the GPIO pin of ESP32. It cannot supply enough current for it certainly. Thus, we need to pull energy from the battery directly to supply the pump. To complete that, we also need a 3.3-volt relay to control the working of the DC pump. Now, we have all those components. This system is being examined again.
+  + ***Energy Management***: Design the energy management system of the outdoor controller. The outdoor controller is supplied by the source voltage, at least 3.3 volts, and we suppose that it needs 0.5 amperes to work all day. We stated that the outdoor controller consumes energy as a load of photovoltaic cells. Thus, the source voltage and current should be the rating of the battery. We have already bought the battery pack, which has 3.7 volts and 9000 mAhr. It means that the outdoor controller must have enough energy to work for not more than 9/0.5 = 18 hours on this battery pack without external energy use. For photovoltaic cells, we would say that they can supply rated energy only for 6-8 hours because this is the sunny time for a day. Thanks to the battery pack can support the time the cells cannot supply rated energy. Now we have already got a solar panel, solar charger, and the battery for our project. The next step is to examine this energy management system and combine it with other parts of the outdoor controller.
+  + ***Mobile App and Cloud***: Design the real-time data display for detected parameters from the outdoor controller. According to the outdoor controller task, we need to ensure that the data is sent and shown on the dashboard in platform  NETPIE correctly. Therefore, we created the dashboard for the real-time data display, as well as the toggle button to click for the cleaning process. Only the dashboard for the dirt score display is not created now, it is waiting for the fabrication.
 ### **Week 6**
-  + ***Dirt Detection***:
-  + ***Other Detection***:
-  + ***Cleaning Action***:
-  + ***Energy Management***:
+  + ***Outdoor Controller***: Finish cleaning action test. After we put a relay between the battery and the DC pump and tested it, we found that the cleaning process has now worked correctly as we designed before.
+  + ***Energy Management***: Finish the energy management system of the outdoor controller. We have already done the experiment to test whether the battery system works or not. We must have another concern that the electrical measurement (voltage, current, power) takes on a solar panel terminal. Therefore, this is another test we need to do. The result is satisfactory. The system can work as same as we designed, and the INA226 sensor can sense voltage, current, and power correctly. This task is waiting for integration with other parts of the outdoor controller.
   + ***Mobile App and Cloud***:
 ### **Week 7**
   + ***Dirt Detection***:
