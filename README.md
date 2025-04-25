@@ -110,7 +110,10 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 ### **Week 7**
   + ***Mobile App and Cloud***: Finish creating the notification for the NETPIE app. PUSH notification has already been created and tested. Now, the notification works correctly as designed. It notifies on the NETPIE app when the dirt score is given 1.
   + ***Outdoor Controller***: According to the progress on ***Mobile App and Cloud*** this week, we found that the battery pack has inadequate energy to supply to the outdoor controller and DC pump. We decided to supply the outdoor controller with a power bank instead of the battery pack. We need to avoid buying more components. Moreover, the energy in the battery pack is still enough for only the DC pump. In conclusion, ESP32 and other components using a 3.3V DC bus are supplied by the power bank, and the DC pump is supplied by the battery pack. Now, all components for the outdoor controller are contained in a control box. The dirt sensor is glued on a stand made from a 3D printer.<br><br>
-![image](https://github.com/user-attachments/assets/9092f14d-a2fc-41b2-b8e8-539dcd6088b8)<br>
+![image](https://github.com/user-attachments/assets/9092f14d-a2fc-41b2-b8e8-539dcd6088b8)
+![85101](https://github.com/user-attachments/assets/4883ca02-53f8-43b0-88fd-1ab5761a3aeb)
+![85099](https://github.com/user-attachments/assets/35a0c121-bd90-434d-92be-508b220e3106)<br>
+
 ### **Week 8**
   + 
 ### **Week 9**
