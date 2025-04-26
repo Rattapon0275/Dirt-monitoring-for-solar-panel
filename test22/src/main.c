@@ -17,13 +17,13 @@
 #include "u_i2c.h"
 #include "u_spi.h"
 
-#define WIFI_SSID      "Mai_Chai_Hotpot_Na"
-#define WIFI_PASSWORD  "12022544pon"
+#define WIFI_SSID      "---------------------"
+#define WIFI_PASSWORD  "---------------------"
 
 #define NETPIE_BROKER_URI "mqtt://broker.netpie.io:1883"
-#define NETPIE_CLIENT_ID  "8f1d7d10-0090-4ecf-89c8-05886c21dbb4"
-#define NETPIE_USERNAME   "5cXCmoAr3pC7U6AM3NXkoEK61gy9xJMG"
-#define NETPIE_PASSWORD   "ekgZ6vngvzXWKdkBJMQcu3ohJy67LDNV"
+#define NETPIE_CLIENT_ID  "---------------------"
+#define NETPIE_USERNAME   "---------------------"
+#define NETPIE_PASSWORD   "---------------------"
 
 #define WATCHDOG_TIMEOUT_SEC 5
 
