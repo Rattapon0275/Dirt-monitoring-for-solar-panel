@@ -71,22 +71,25 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 +	Command cleaning solar panels via a mobile app or automatically clean by themselves if the dirtiness score reaches a specific limit.
 
 ## Learning Goals
-+	To learn and apply ITO and Non-ITO film to create a dirt sensor
-+	To learn basic ideas of how to create IoT communication system
-+	To learn basic ideas of how to create a mobile app
-
-## Timeline
-![image](https://github.com/user-attachments/assets/41c7870b-2805-4b9a-b31a-86497f003847)
++ To learn and apply copper tape on glass to create a dirt sensor
++ To learn basic ideas of how to create IoT communication system
++ To learn basic ideas of how to create a dashboard and notification on a mobile app
 
 ## Challenges: Dirt Sensor Sensitivity
 + The first approach of the dirt sensor shows a little change of capacitance approximately 0.212 pF, which was insufficient for the ESP32 to detect. It was required to increase the offset and change on the sensor’s capacitance.
-+ The latest approach of the dirt sensor uses a layout of copper tape to increase both the offset and the change on the capacitance. It gives 37.32 pF and 3.49 pF for the offset and change, respectively. This value is sufficient for ESP32 to detect it.
+![image](https://github.com/user-attachments/assets/d4060bbb-5fa4-4b90-8e65-ec5a01cfd1fa)
+
++ The latest approach of the dirt sensor uses this layout of copper tape to increase both the offset and the change on the capacitance. It gives 37.32 pF and 3.49 pF for the offset and change, respectively. This value is sufficient for ESP32 to detect it.
+![image](https://github.com/user-attachments/assets/c72e5e04-576c-48fa-93e5-f7ab7a26e9fe)
 
 ## Future Improvement
 + Create the function for backup data 
 + Set up sleep modes for longer standalone operation
 + Add more nodes of the outdoor controller for multiple solar panels
-  
+
+## Weekly Update
+![image](https://github.com/user-attachments/assets/41c7870b-2805-4b9a-b31a-86497f003847)
+
 ### **Week 1**
   + ***Dirt Detection***: Try creating two parallel copper strips attached on a glass plate, then the result is shown via the difference of capacitance between having the plate with and without powder (to simulate dust) as shown below. While the powder is being on the plate, the capacitance measured between two strips by LCR meter is more than the capacitance as no powder on the plate, in a unit of 0.1 pF. This experiment can be concluded that powder(or dust) affect a small capacitance change between copper strips. The next step is to try increasing the capacitance of the powder more obviously, in a unit of nF or uF, or find the solution to convert this small change into dirt score.<br><br>
 ![image](https://github.com/user-attachments/assets/c073fd8a-03e0-429d-999c-8ed51b7b8920) <br>
@@ -119,11 +122,11 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 ### **Week 7**
   + ***Mobile App and Cloud***: Finish creating the notification for the NETPIE app. PUSH notification has already been created and tested. Now, the notification works correctly as designed. It notifies on the NETPIE app when the dirt score is given 1.
   + ***Outdoor Controller***: According to the progress on ***Mobile App and Cloud*** this week, we found that the battery pack has inadequate energy to supply to the outdoor controller and DC pump. We decided to supply the outdoor controller with a power bank instead of the battery pack. We need to avoid buying more components. Moreover, the energy in the battery pack is still enough for only the DC pump. In conclusion, ESP32 and other components using a 3.3V DC bus are supplied by the power bank, and the DC pump is supplied by the battery pack. Now, all components for the outdoor controller are contained in a control box. The dirt sensor is glued on a stand made from a 3D printer.<br><br>
-![image](https://github.com/user-attachments/assets/9092f14d-a2fc-41b2-b8e8-539dcd6088b8)
-![85101](https://github.com/user-attachments/assets/4883ca02-53f8-43b0-88fd-1ab5761a3aeb)
-![85099](https://github.com/user-attachments/assets/35a0c121-bd90-434d-92be-508b220e3106)<br>
+![image](https://github.com/user-attachments/assets/c0baf366-28d6-432d-af80-b48dbf01bdfb)
+![image](https://github.com/user-attachments/assets/75c3e635-e6fc-4b67-baff-c148cd5e7c14)
+![image](https://github.com/user-attachments/assets/f5c968d3-118d-4ba6-a583-a90d0c7e9c03)<br>
 
 ### **Week 8**
-  + 
+  + -
 ### **Week 9**
-  + 
+  + -
