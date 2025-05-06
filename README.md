@@ -78,6 +78,16 @@ Dirt monitoring system is designed to support solar panels in households. The sy
 ## Timeline
 ![image](https://github.com/user-attachments/assets/41c7870b-2805-4b9a-b31a-86497f003847)
 
+## Challenges
+ + ***Detecting Fine Dust***: Accurately detecting small, lightweight dust particles posed a major challenge in both sensor layout and material configuration.
+ + ***Low Initial Sensitivity***: The first sensor design using non-ITO copper tape showed a very small capacitance change (~0.212 pF), which was too low for the MCU to detect reliably.
+ + ***Microcontroller Integration***: Fine-tuning the system to ensure the MCU responded accurately to small capacitance changes demanded precise coding and testing.
+
+## Future Improvement
++ Expand the mobile app functionality with historical data visualization and alert customization.
++ Multi-Panel and Scalable Deployment Expand the system to support monitoring and control for multiple solar panels across larger installations with centralized data visualization.
++ Energy Optimization for Edge Devices Minimize power consumption of the sensor and MCU using energy-efficient communication protocols and sleep modes for longer standalone operation.
+
 ### **Week 1**
   + ***Dirt Detection***: Try creating two parallel copper strips attached on a glass plate, then the result is shown via the difference of capacitance between having the plate with and without powder (to simulate dust) as shown below. While the powder is being on the plate, the capacitance measured between two strips by LCR meter is more than the capacitance as no powder on the plate, in a unit of 0.1 pF. This experiment can be concluded that powder(or dust) affect a small capacitance change between copper strips. The next step is to try increasing the capacitance of the powder more obviously, in a unit of nF or uF, or find the solution to convert this small change into dirt score.<br><br>
 ![image](https://github.com/user-attachments/assets/c073fd8a-03e0-429d-999c-8ed51b7b8920) <br>
